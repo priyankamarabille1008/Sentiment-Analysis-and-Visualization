@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+
+      <form action = "http://localhost:5000/search" method = "post">
+         <p>Enter Name:</p>
+         <p><input type = "text" name = "nm" /></p>
+         <p><input class="btn btn-outline-info" type = "submit" value = "submit" /></p>
+      </form>
+
+{% endblock content %}

@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+        <br>
+        <br>
+        <center>
+        <form action = "/predict" method = "post" enctype="multipart/form-data">
+
+            <label for="psw"><b>Enter a review </b></label> <input type="text" placeholder="" name="review" style="width:450px; padding:15px"><br>
+            <br>
+            <br>
+            <button type="submit">Predict</button>
+        </form></center>
+        <h3>Positive: {{p}}</h3>
+        <h3>Negative: {{n}}</h3>
+        <h3>Neutral: {{neutral}}</h3>
+
+    </div>
+
+{% endblock content %}

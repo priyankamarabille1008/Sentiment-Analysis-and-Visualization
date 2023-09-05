@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+
+      <legend class="border-bottom mb-4">file loaded</legend>
+
+      <form action = "http://localhost:5000/analyse" method = "get">
+          <p><input class="btn btn-outline-info" type = "submit" value = "Analyse Sentiments" /></p>
+      </form>
+
+{% endblock content %}

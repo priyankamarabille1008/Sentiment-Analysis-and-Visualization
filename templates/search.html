@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    <form action = "/analyse" method = "post" enctype="multipart/form-data">
+        <input class="btn btn-outline-info" type="file" name="file" />
+        <input class="btn btn-outline-info" type = "submit" value="Upload">
+    </form>
+
+{% endblock content %}

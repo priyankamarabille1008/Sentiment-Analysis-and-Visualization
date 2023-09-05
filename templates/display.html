@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+
+      <legend class="border-bottom mb-4">Here is Sentimental Analysis</legend>
+
+      <table border = 0>
+         {% for key, value in result.items() %}
+            <tr>
+               <th> {{ key }} </th>
+               <td> {{ value }} </td>
+            </tr>
+         {% endfor %}
+      </table>
+      {{ p }}
+<img src="{{url_for('static', filename='my_plot.png')}}" align="middle" />
+{% endblock content %}

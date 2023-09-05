@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+            <h1 style="font:Monaco;text-size:25px; text-align:center;color:#102038;"> Twitter Sentiment Analysis </h1>
+        </div>
+        <br>
+        <div class="container">
+           <div class="row">
+               <div class="col-md-5">
+                   <img src="{{url_for('static', filename='th.webp')}}" alt="Sentiment Analysis" style="width:400px;height:275px" align="middle"/>
+               </div>
+               </div>
+            </div>
+        <!--article class="media content-section">
+                Amalyse twitter users tweets sentiment here
+         
+        </article>
+         <div class="form-group">
+                 <a class="btn btn-outline-info" href="{{ url_for('search') }}">Analyse Tweets</a>
+         </div-->
+{% endblock content %}

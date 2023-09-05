@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+        <article class="media content-section">
+                Analyse twitter users tweets sentiment here
+
+        </article>
+         <div class="form-group">
+                 <a class="btn btn-outline-info" href="{{ url_for('tweet') }}">Analyse Tweets</a>
+                  <a class="btn btn-outline-info" href="{{ url_for('message') }}">Enter review</a>
+         </div>
+
+{% endblock content %}
